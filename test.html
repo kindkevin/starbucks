@@ -12,18 +12,17 @@
 
 <body>
   <script>
-    function min(first, ...rests) {
-      // 변수 선언하기
-      let output
-      let items
-
-      // 매개변수의 자료형에 따라 조건 분기하기
-      if(Array.isArray(first)) {
-        output = first[0]
-        items = first
-      } else if()
+    const max = function(...array) {
+      let output  = array[0];
+      for (const data of array) {
+        if (output < data) {
+          output = data;
+        }
+      }
+      return output;
     }
-    
+
+    console.log(max([1, 2, 3, 4]));
   </script>
 </body>
 
